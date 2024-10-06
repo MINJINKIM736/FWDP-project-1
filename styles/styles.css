@@ -123,6 +123,8 @@ a:focus {
     text-align: center;
     line-height: .8rem;
     margin: 1rem 0 auto;
+    box-shadow: 5px 5px 5px gray; /*Searched MDN*/
+
 }
 
 .site-header-text p {
@@ -143,7 +145,7 @@ a:focus {
     /* display: block; */
     background-color: #ffffff83;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px gray; /*Searched MDN*/
+    box-shadow: 5px 5px 5px gray;
     padding: 3rem;
     margin: 2rem auto;
     text-align: center;
@@ -171,26 +173,35 @@ a:focus {
 
 .contact-info {
     background-color: #ffffff83;
-    padding: 3rem 0;
+    padding: 1rem 0;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
+    width: 16rem;
+    margin: 0 auto;
     
+}
+
+.contact p {
+    text-align: center;
 }
 
 .icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: .4rem;
+    gap: .6rem;
+}
+
+.icons img, a {
+    width: 3rem;
+    height: 3rem;
+
 }
 
 .icons img {
-    width: 3rem;
+    padding: .1rem;
 }
 
-.contact p {
-    text-align: center;
-}
 
 
 /* footer */
@@ -237,7 +248,7 @@ a:focus {
     }
 
     .contact-info {
-        max-width: 35rem;
+        width: 38rem;
         margin: 0 auto;
     }
 
@@ -245,3 +256,16 @@ a:focus {
 
 
 
+
+
+
+
+
+
+/* -----Credits-----
+
+site-header img:  Milad Fakurian 
+https://unsplash.com/ko/%EC%82%AC%EC%A7%84/a-blurry-photo-of-a-white-background-GJKx5lhwU3M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>의<a href="https://unsplash.com/ko/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+
+
+-----*/
