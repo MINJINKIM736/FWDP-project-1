@@ -1,39 +1,39 @@
 /*-----Typography-----*/
 
 body {
-}
-
-h1 {
-    font-family: "Exo 2", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h2, h3, p {
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+h1 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 h2 {
     font-weight: 600;
 }
 
+h3 {
+    font-weight: 500;
+}
 
 
 /*-----Elements-----*/
 
 
-.site-header, .projects, .contact {
-    margin-bottom: 5rem;
+.site-header, .about, .projects, .contact {
+    margin-bottom: 6rem;
 }
 
 /*-----Links-----*/
 
 a,
 a:visited { 
-	color: #008000;
+	color: #363736;
 	text-decoration: none;
 }
 
@@ -50,43 +50,19 @@ a:focus {
 
 /*-----Components-----*/
 
+/* body */
+
 body {
     background-color: rgb(235, 237, 238);
     line-height: 1.6;
-    max-width: 80%;
     margin: 0 auto;
 
 }
 
 
 
-/* site-header */
-.site-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-
-}
-
-.site-header img {
-    width: 100%;
-    height: 320px;
-}
-
-.site-header-text {
-    background-color: #ffffff83;
-    border-radius: 10px;
-    padding: 1rem;
-    position: absolute;
-    text-align: center;
-    line-height: .6rem;
-    margin: 1rem 0 auto;
-}
-
-
 /* nav */
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -98,15 +74,71 @@ nav li {
     list-style-type: none;
 }
 
+nav a {
+    padding: .5rem 1rem;
+}
+
+
+/*site-wrapper */
+
+.site-wrapper > *:not(.site-header) {
+    padding: 0 1rem; 
+}
+
+
+.site-wrapper h2 {
+    text-align: center;
+}
+
+/* site-header */
+
+.site-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.site-header img {
+    width: 100%;
+    height: 500px;
+}
+
+.site-header-text {
+    background-color: #ffffff83;
+    border-radius: 10px;
+    padding: 3rem 4rem;
+    position: absolute;
+    text-align: center;
+    line-height: .8rem;
+    margin: 1rem 0 auto;
+}
+
+.site-header-text p {
+    letter-spacing: -.06rem;}
+
+
+/* section about */
+
+.about p {
+    text-align: center;
+}
+
+
+
+/* section project */
 
 .project {
+    /* display: block; */
     background-color: #ffffff83;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
     padding: 3rem;
     margin: 2rem auto;
     text-align: center;
-
+    width: 16rem;
+    height: 16rem;
 }
 
 .project h3 {
@@ -117,54 +149,89 @@ nav li {
     margin-top: 0;
 }
 .project img {
-    width: clamp(120px, 120px, 120px);
-    margin: 
-}
-
-
-
-/* section.about */
-
-.about {
-    margin: 0 .5rem 5rem .5rem;
-}
-
-
-/* section.projects */
-
-.project-wrapper {
-    display: block;
-}
-
-article.project {
-
+    width: 7.5rem;
 }
 
 
 /* section.contact */
 
 
+.contact-info {
+    background-color: #ffffff83;
+    padding: 3rem 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .4rem;
+}
+
+.icons img {
+    width: 3rem;
+}
+
+.contact p {
+    text-align: center;
+}
+
 
 /* footer */
 
-.site-footer p {
+.site-footer {
     text-align: center;
+    
 }
 
 /*-----media-----*/
 
-@media(min-width:50em) {
+@media(min-width: 768px) {
+
+    .site-wrapper > *:not(.site-header) {
+        max-width: 80%;
+        margin: 6rem auto;
+
+    }
+
+    .site-header-text {
+        padding: 3rem 12rem;
+        position: absolute;
+        text-align: center;
+        margin: 1rem 0 auto;
+    }
+    
+    .site-header-text p {
+        letter-spacing: normal;}
+
+
+    .about p {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
     .project-wrapper {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: .6rem;
-        width: 80%;
+        gap: 2rem;
+        margin: 0 auto; 
+        max-width: 55rem;
     }
 
     .project {
-        
+        margin: 0;
     }
+
+    .contact-info {
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
 }
+
 
 

@@ -20,29 +20,28 @@
     <header>
          <nav>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
          </nav>
     </header>
     
     <main class="site-wrapper">
-        <section class="site-header">
+        <section class="site-header" id="site-header">
             <div class="site-header-text">
             <h1>Minjin Kim</h1>
-            <p>Front-End Wep Developer</p>
+            <p>Front-End Web Developer</p>
             </div>
-            <img src="images/site-header-img.jpg" alt="site-header img">
+            <img class="site-header-img" src="images/site-header-img.jpg" alt="site-header img">
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <h2>About</h2>
-            <p>I am currently a front-end web developer student studying at BCIT. Aside from coding, I like to go hiking. Here are the projects I am working on below.</p>
+            <p>I'm an aspiring front-end developer passionate about creating user-friendly, accessible websites. I aim to design visually appealing sites that anyone can easily navigate. My focus is on making the web enjoyable for everyone.</p>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <div class="project-wrapper">
                 <article class="project">
@@ -66,7 +65,7 @@
                     <p>coming soon</p>
                 </article>
                 <article class="project">
-                    <h3 class="project-title">Wordpress Website</h3>
+                    <h3 class="project-title">Wordpress</h3>
                     <img class=project-img src="images/project.png" alt="project image">
                     <p>coming soon</p>
                 </article>
@@ -78,10 +77,16 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Connect with me</h2>
-            <p>for projects and collaborations</p>
-            <!-- add links to instram and email -->
+            <div class="contact-info">
+               <p>for projects and collaborations</p>
+                <div class="icons">
+                    <a href="mailto:minj1013fortest@gmail.com"><img src="images/email.png" alt="email"></a>
+                    <a href="https://github.com/MINJINKIM736/Minjin"><img src="images/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/minjinkimcoding"><img src="images/linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
         </section>
     </main>
 
